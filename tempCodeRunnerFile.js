@@ -1,2 +1,1 @@
-let ans1 = (++a) * (--b);
-// console.log(ans1);
+console.log(dest2);
