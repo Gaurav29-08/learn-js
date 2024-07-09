@@ -143,12 +143,17 @@
 
 // console.log(countfunction(1,2,4,4,6,7,6555,));
 
+const paragraphn = document.querySelector("#para");
 
-const eventFunction = ()=>{
-  console.log("Event listner");
-}
+paragraphn.addEventListener('click',function(event){
+  console.log(event);
+})
 
 
-document.addEventListener('click',eventFunction);
+let example = document.querySelectorAll("a");
+let thirdLink = example[0]
 
-document.removeEventListener('click',eventFunction);
+thirdLink.addEventListener('click',function(event){
+  event.preventDefault();
+  console.log("Okaya aaya maja ");
+})
