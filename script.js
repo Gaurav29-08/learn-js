@@ -158,20 +158,29 @@
 //   console.log("Okaya aaya maja ");
 // })
 
-let myDiv = document.createElement('div');
+// let myDiv = document.createElement('div');
 
 
-const paraStatus =(event)=>{
-  console.log("para" + event.target.textContent );
-}
+// const paraStatus =(event)=>{
+//   console.log("para" + event.target.textContent );
+// }
 
-myDiv.addEventListener('click',paraStatus);
+// myDiv.addEventListener('click',paraStatus);
 
-for(let i=1;i<=100;i++){
-let newElement = document.createElement('p');
-newElement.textContent = "This is para " + i;
+// for(let i=1;i<=100;i++){
+// let newElement = document.createElement('p');
+// newElement.textContent = "This is para " + i;
 
-myDiv.appendChild(newElement);
-}
+// myDiv.appendChild(newElement);
+// }
 
-document.body.appendChild(myDiv);
+// document.body.appendChild(myDiv);
+
+
+let element = document.querySelector("#wrapper");
+
+element.addEventListener('click',function(event){
+  if(event.target.nodeName === "SPAN")
+  console.log("span pr click kra hai "  + event.target.textContent);
+
+})
