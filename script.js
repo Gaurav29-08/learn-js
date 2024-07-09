@@ -143,17 +143,35 @@
 
 // console.log(countfunction(1,2,4,4,6,7,6555,));
 
-const paragraphn = document.querySelector("#para");
+// const paragraphn = document.querySelector("#para");
 
-paragraphn.addEventListener('click',function(event){
-  console.log(event);
-})
+// paragraphn.addEventListener('click',function(event){
+//   console.log(event);
+// })
 
 
-let example = document.querySelectorAll("a");
-let thirdLink = example[0]
+// let example = document.querySelectorAll("a");
+// let thirdLink = example[0]
 
-thirdLink.addEventListener('click',function(event){
-  event.preventDefault();
-  console.log("Okaya aaya maja ");
-})
+// thirdLink.addEventListener('click',function(event){
+//   event.preventDefault();
+//   console.log("Okaya aaya maja ");
+// })
+
+let myDiv = document.createElement('div');
+
+
+const paraStatus =(event)=>{
+  console.log("para" + event.target.textContent );
+}
+
+myDiv.addEventListener('click',paraStatus);
+
+for(let i=1;i<=100;i++){
+let newElement = document.createElement('p');
+newElement.textContent = "This is para " + i;
+
+myDiv.appendChild(newElement);
+}
+
+document.body.appendChild(myDiv);
