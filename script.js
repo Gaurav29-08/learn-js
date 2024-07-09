@@ -177,10 +177,18 @@
 // document.body.appendChild(myDiv);
 
 
-let element = document.querySelector("#wrapper");
+// let element = document.querySelector("#wrapper");
 
-element.addEventListener('click',function(event){
-  if(event.target.nodeName === "SPAN")
-  console.log("span pr click kra hai "  + event.target.textContent);
+// element.addEventListener('click',function(event){
+//   if(event.target.nodeName === "SPAN")
+//   console.log("span pr click kra hai "  + event.target.textContent);
 
-})
+// })
+
+
+for(let i=1;i<=100;i++){
+  let element = document.createElement('p');
+  element.textContent = "This is para " + i;
+
+  document.body.appendChild(element);
+}
