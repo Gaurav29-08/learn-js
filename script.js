@@ -194,14 +194,36 @@
 // }
 
 
-function a(){
-  console.log("a print");
-}
+// function a(){
+//   console.log("a print");
+// }
 
-function b(){
-  console.log("b print");
-}
+// function b(){
+//   console.log("b print");
+// }
 
 
-a();
-b();
+// a();
+// b();
+
+
+// let para = document.getElementById("para");
+
+// console.log("hello 1");
+
+// para.addEventListener('click',function(){
+//   console.log("hello 2");
+// })
+
+// console.log("hello 3");
+
+
+let myPromise = new Promise(function(resolve,reject){
+  setTimeout(function(){
+    console.log(" I am promise");
+  },5000);
+  resolve(8484884)
+});
+
+
+myPromise.then((value)=>{console.log(value)});
