@@ -222,24 +222,33 @@
 
 
 //parally unit we use await
-async function utility(){
-  let delhiMausam = new Promise(function(resolve,reject){
-    setTimeout(function() {
-      resolve ("Delhi ka Mausam");
-    },5000)
+// async function utility(){
+//   let delhiMausam = new Promise(function(resolve,reject){
+//     setTimeout(function() {
+//       resolve ("Delhi ka Mausam");
+//     },5000)
     
-  });
+//   });
 
-  let MumbaiiMausam = new Promise(function(resolve,reject){
-    setTimeout(function(){
-      resolve ("Mumbai ka Mausam")
-    },6000)
+//   let MumbaiiMausam = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//       resolve ("Mumbai ka Mausam")
+//     },6000)
    
-  });
+//   });
 
-  let dm =  await delhiMausam;
-  let mm =  await MumbaiiMausam;
+//   let dm =  await delhiMausam;
+//   let mm =  await MumbaiiMausam;
 
 
-  return [dm,mm]
+//   return [dm,mm]
+// }
+
+
+async function utility(){
+  let content = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+  let output =  await content.json();
+  console.log(output.title);
 }
+
+utility();
