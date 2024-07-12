@@ -1,8 +1,8 @@
 # learn-js
-Variables and Data Types
-Operators
-Functions
-Control Structures
+- Variables and Data Types
+- Operators
+- Functions
+ - Control Structures
 Objects and Arrays
 Events
 DOM Manipulation
